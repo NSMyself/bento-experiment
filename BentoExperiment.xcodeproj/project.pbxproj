@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59A9F26421E76A4C006320D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A9F26321E76A4C006320D6 /* AppDelegate.swift */; };
+		59A9F26621E76A4C006320D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A9F26521E76A4C006320D6 /* ViewController.swift */; };
+		59A9F26B21E76A4E006320D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A9F26A21E76A4E006320D6 /* Assets.xcassets */; };
+		59A9F26E21E76A4E006320D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */; };
+		59B8395421E79D7500DE21D7 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 59B8395321E79D7500DE21D7 /* posts.json */; };
+		59B8395621E79F1300DE21D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8395521E79F1300DE21D7 /* ViewModel.swift */; };
+		59B8395821E7A05300DE21D7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8395721E7A05300DE21D7 /* Post.swift */; };
+		59B8395B21E7A1AF00DE21D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8395A21E7A1AF00DE21D7 /* Store.swift */; };
+		59FA1B7421E78A3200FE2CD4 /* EmptySpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */; };
+		F2BA34380004FD1040AFB38B /* Pods_BentoExperiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B32941A2CBC97962661BAE3 /* Pods_BentoExperiment.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B32941A2CBC97962661BAE3 /* Pods_BentoExperiment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BentoExperiment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B48381BFFAB1390944B31C2 /* Pods-BentoExperiment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoExperiment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment.debug.xcconfig"; sourceTree = "<group>"; };
+		59A9F26021E76A4C006320D6 /* BentoExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BentoExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59A9F26321E76A4C006320D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59A9F26521E76A4C006320D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59A9F26A21E76A4E006320D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59A9F26D21E76A4E006320D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59A9F26F21E76A4E006320D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59B8395321E79D7500DE21D7 /* posts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = posts.json; sourceTree = "<group>"; };
+		59B8395521E79F1300DE21D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		59B8395721E7A05300DE21D7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		59B8395A21E7A1AF00DE21D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpaceCell.swift; sourceTree = "<group>"; };
+		759379C57772CD830E0F8AEA /* Pods-BentoExperiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoExperiment.release.xcconfig"; path = "Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59A9F25D21E76A4C006320D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2BA34380004FD1040AFB38B /* Pods_BentoExperiment.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59A9F25721E76A4C006320D6 = {
+			isa = PBXGroup;
+			children = (
+				59A9F26221E76A4C006320D6 /* BentoExperiment */,
+				59A9F26121E76A4C006320D6 /* Products */,
+				62DCCF246581E017BB17F468 /* Pods */,
+				AE104421E0A78E4C077DED02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		59A9F26121E76A4C006320D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59A9F26021E76A4C006320D6 /* BentoExperiment.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59A9F26221E76A4C006320D6 /* BentoExperiment */ = {
+			isa = PBXGroup;
+			children = (
+				59A9F26321E76A4C006320D6 /* AppDelegate.swift */,
+				59A9F26521E76A4C006320D6 /* ViewController.swift */,
+				59B8395521E79F1300DE21D7 /* ViewModel.swift */,
+				59B8395A21E7A1AF00DE21D7 /* Store.swift */,
+				59B8395721E7A05300DE21D7 /* Post.swift */,
+				59A9F26A21E76A4E006320D6 /* Assets.xcassets */,
+				59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */,
+				59A9F26F21E76A4E006320D6 /* Info.plist */,
+				59FA1B7221E7897200FE2CD4 /* Cells */,
+				59B8395221E79CCC00DE21D7 /* Resources */,
+			);
+			path = BentoExperiment;
+			sourceTree = "<group>";
+		};
+		59B8395221E79CCC00DE21D7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59B8395321E79D7500DE21D7 /* posts.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		59FA1B7221E7897200FE2CD4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		62DCCF246581E017BB17F468 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B48381BFFAB1390944B31C2 /* Pods-BentoExperiment.debug.xcconfig */,
+				759379C57772CD830E0F8AEA /* Pods-BentoExperiment.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE104421E0A78E4C077DED02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B32941A2CBC97962661BAE3 /* Pods_BentoExperiment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59A9F25F21E76A4C006320D6 /* BentoExperiment */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59A9F27221E76A4E006320D6 /* Build configuration list for PBXNativeTarget "BentoExperiment" */;
+			buildPhases = (
+				CB2548DF6033B87B61550A0F /* [CP] Check Pods Manifest.lock */,
+				59A9F25C21E76A4C006320D6 /* Sources */,
+				59A9F25D21E76A4C006320D6 /* Frameworks */,
+				59A9F25E21E76A4C006320D6 /* Resources */,
+				0BB10DD8776B710CB31739D2 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BentoExperiment;
+			productName = BentoExperiment;
+			productReference = 59A9F26021E76A4C006320D6 /* BentoExperiment.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59A9F25821E76A4C006320D6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = NSMyself;
+				TargetAttributes = {
+					59A9F25F21E76A4C006320D6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 59A9F25B21E76A4C006320D6 /* Build configuration list for PBXProject "BentoExperiment" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59A9F25721E76A4C006320D6;
+			productRefGroup = 59A9F26121E76A4C006320D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59A9F25F21E76A4C006320D6 /* BentoExperiment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59A9F25E21E76A4C006320D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A9F26E21E76A4E006320D6 /* LaunchScreen.storyboard in Resources */,
+				59B8395421E79D7500DE21D7 /* posts.json in Resources */,
+				59A9F26B21E76A4E006320D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BB10DD8776B710CB31739D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bento/Bento.framework",
+				"${BUILT_PRODUCTS_DIR}/FlexibleDiff/FlexibleDiff.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bento.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlexibleDiff.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB2548DF6033B87B61550A0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BentoExperiment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59A9F25C21E76A4C006320D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59A9F26621E76A4C006320D6 /* ViewController.swift in Sources */,
+				59FA1B7421E78A3200FE2CD4 /* EmptySpaceCell.swift in Sources */,
+				59B8395621E79F1300DE21D7 /* ViewModel.swift in Sources */,
+				59B8395B21E7A1AF00DE21D7 /* Store.swift in Sources */,
+				59A9F26421E76A4C006320D6 /* AppDelegate.swift in Sources */,
+				59B8395821E7A05300DE21D7 /* Post.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59A9F26D21E76A4E006320D6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59A9F27021E76A4E006320D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59A9F27121E76A4E006320D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59A9F27321E76A4E006320D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B48381BFFAB1390944B31C2 /* Pods-BentoExperiment.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6QXSY3FS;
+				INFOPLIST_FILE = BentoExperiment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsmyself.BentoExperiment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59A9F27421E76A4E006320D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 759379C57772CD830E0F8AEA /* Pods-BentoExperiment.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UP6QXSY3FS;
+				INFOPLIST_FILE = BentoExperiment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nsmyself.BentoExperiment;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59A9F25B21E76A4C006320D6 /* Build configuration list for PBXProject "BentoExperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A9F27021E76A4E006320D6 /* Debug */,
+				59A9F27121E76A4E006320D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59A9F27221E76A4E006320D6 /* Build configuration list for PBXNativeTarget "BentoExperiment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59A9F27321E76A4E006320D6 /* Debug */,
+				59A9F27421E76A4E006320D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59A9F25821E76A4C006320D6 /* Project object */;
+}

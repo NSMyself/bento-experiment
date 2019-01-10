@@ -1,0 +1,6 @@
+framework module Pods_BentoExperiment {
+  umbrella header "Pods-BentoExperiment-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,20 @@
+PODS:
+  - Bento (0.2):
+    - FlexibleDiff (= 0.0.5)
+  - FlexibleDiff (0.0.5)
+
+DEPENDENCIES:
+  - Bento
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bento
+    - FlexibleDiff
+
+SPEC CHECKSUMS:
+  Bento: 1e0fc04594adb6761c1e53000b3ee9127add33fe
+  FlexibleDiff: a35df80dbfa406abcab0483c7bc62ebf7e37f2ee
+
+PODFILE CHECKSUM: cbdc426e7ec02255658dbe74e717904f26bad54f
+
+COCOAPODS: 1.5.3
