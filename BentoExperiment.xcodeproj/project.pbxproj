@@ -15,6 +15,9 @@
 		59B8395621E79F1300DE21D7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8395521E79F1300DE21D7 /* ViewModel.swift */; };
 		59B8395821E7A05300DE21D7 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8395721E7A05300DE21D7 /* Post.swift */; };
 		59B8395B21E7A1AF00DE21D7 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B8395A21E7A1AF00DE21D7 /* Store.swift */; };
+		59F79AB921E8B0A500413405 /* SectionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F79AB821E8B0A500413405 /* SectionId.swift */; };
+		59F79ABB21E8B0B700413405 /* RowId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F79ABA21E8B0B700413405 /* RowId.swift */; };
+		59F79ABF21E8B47600413405 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F79ABE21E8B47600413405 /* PostCell.swift */; };
 		59FA1B7421E78A3200FE2CD4 /* EmptySpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */; };
 		F2BA34380004FD1040AFB38B /* Pods_BentoExperiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B32941A2CBC97962661BAE3 /* Pods_BentoExperiment.framework */; };
 /* End PBXBuildFile section */
@@ -32,6 +35,9 @@
 		59B8395521E79F1300DE21D7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		59B8395721E7A05300DE21D7 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		59B8395A21E7A1AF00DE21D7 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		59F79AB821E8B0A500413405 /* SectionId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionId.swift; sourceTree = "<group>"; };
+		59F79ABA21E8B0B700413405 /* RowId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowId.swift; sourceTree = "<group>"; };
+		59F79ABE21E8B47600413405 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpaceCell.swift; sourceTree = "<group>"; };
 		759379C57772CD830E0F8AEA /* Pods-BentoExperiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoExperiment.release.xcconfig"; path = "Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,10 +79,10 @@
 				59A9F26521E76A4C006320D6 /* ViewController.swift */,
 				59B8395521E79F1300DE21D7 /* ViewModel.swift */,
 				59B8395A21E7A1AF00DE21D7 /* Store.swift */,
-				59B8395721E7A05300DE21D7 /* Post.swift */,
 				59A9F26A21E76A4E006320D6 /* Assets.xcassets */,
 				59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */,
 				59A9F26F21E76A4E006320D6 /* Info.plist */,
+				59F79AB721E8B09000413405 /* Models */,
 				59FA1B7221E7897200FE2CD4 /* Cells */,
 				59B8395221E79CCC00DE21D7 /* Resources */,
 			);
@@ -91,10 +97,21 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		59F79AB721E8B09000413405 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				59F79AB821E8B0A500413405 /* SectionId.swift */,
+				59F79ABA21E8B0B700413405 /* RowId.swift */,
+				59B8395721E7A05300DE21D7 /* Post.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		59FA1B7221E7897200FE2CD4 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 				59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */,
+				59F79ABE21E8B47600413405 /* PostCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -241,7 +258,10 @@
 				59A9F26621E76A4C006320D6 /* ViewController.swift in Sources */,
 				59FA1B7421E78A3200FE2CD4 /* EmptySpaceCell.swift in Sources */,
 				59B8395621E79F1300DE21D7 /* ViewModel.swift in Sources */,
+				59F79ABB21E8B0B700413405 /* RowId.swift in Sources */,
 				59B8395B21E7A1AF00DE21D7 /* Store.swift in Sources */,
+				59F79ABF21E8B47600413405 /* PostCell.swift in Sources */,
+				59F79AB921E8B0A500413405 /* SectionId.swift in Sources */,
 				59A9F26421E76A4C006320D6 /* AppDelegate.swift in Sources */,
 				59B8395821E7A05300DE21D7 /* Post.swift in Sources */,
 			);

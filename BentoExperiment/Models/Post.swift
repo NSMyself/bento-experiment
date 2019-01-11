@@ -8,9 +8,10 @@
 
 import Foundation
 
-struct Post: Codable {
+struct Post: Codable, Hashable {
     let id: Int
     let userId: Int
     let title: String
     let body: String
 }
+

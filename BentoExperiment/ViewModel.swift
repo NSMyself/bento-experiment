@@ -7,13 +7,18 @@
 //
 
 import UIKit
-
-struct RequestCodable: Codable {
-    let posts: [Post]
-}
+import Bento
 
 final class ViewModel {
+    let renderer = Renderer()
+    let store = Store()
     
+    func render() {
+        renderer.fire(posts: store.posts)
+    }
+}
+
+extension ViewModel {
     final class Renderer {
         
         // this is a quite naive way of setting up things but the purpose of this experiment is to toy around with Bento, so i won't waste time with that
@@ -25,15 +30,17 @@ final class ViewModel {
         }
         
         func fire(posts: [Post]) {
-            print(posts)
+            let box = Box.empty
+                |-+ Section(id: SectionId.noId)
+                |---* makeRows(from: posts)
+            
+            tableView?.render(box)
         }
-    }
         
-    let renderer = Renderer()
-    let store = Store()
-    
-    func render() {
-        print("oi?")
-        renderer.fire(posts: store.posts)
+        private func makeRows(from posts: [Post]) -> [Node<RowId>] {
+            return posts.enumerated().map { (index, post) in
+                return RowId.post(post) <> PostComponent(title: post.title, description: post.body)
+            }
+        }
     }
 }

@@ -10,7 +10,6 @@ import UIKit
 import Bento
 
 class ViewController: UIViewController {
-
     let viewModel = ViewModel()
     let tableView: UITableView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -21,34 +20,23 @@ class ViewController: UIViewController {
         return $0
     }(UITableView())
     
-    enum SectionId: Hashable {
-        case first
-        case second
-        case third
-        case fourth
-    }
-    
-    enum RowId: Hashable {
-        case space
-        case note
-        case toggle
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("fdx?")
-        setup()
+        setupViews()
         viewModel.render()
     }
     
-    private func setup() {
+    private func setupViews() {
+        
+        view.backgroundColor = .white
+        
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
-            tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            tableView.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.widthAnchor.constraint(equalTo: view.widthAnchor),
-            tableView.heightAnchor.constraint(equalTo: view.heightAnchor)
+            tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
         
         viewModel.renderer.bind(tableView)
