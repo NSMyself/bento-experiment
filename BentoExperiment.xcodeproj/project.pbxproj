@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		59A9F26421E76A4C006320D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A9F26321E76A4C006320D6 /* AppDelegate.swift */; };
-		59A9F26621E76A4C006320D6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A9F26521E76A4C006320D6 /* ViewController.swift */; };
+		59A9F26621E76A4C006320D6 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A9F26521E76A4C006320D6 /* PostsViewController.swift */; };
 		59A9F26B21E76A4E006320D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59A9F26A21E76A4E006320D6 /* Assets.xcassets */; };
 		59A9F26E21E76A4E006320D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */; };
 		59B8395421E79D7500DE21D7 /* posts.json in Resources */ = {isa = PBXBuildFile; fileRef = 59B8395321E79D7500DE21D7 /* posts.json */; };
@@ -19,6 +19,8 @@
 		59F79ABB21E8B0B700413405 /* RowId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F79ABA21E8B0B700413405 /* RowId.swift */; };
 		59F79ABF21E8B47600413405 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F79ABE21E8B47600413405 /* PostCell.swift */; };
 		59FA1B7421E78A3200FE2CD4 /* EmptySpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */; };
+		59FFF3AD21ECF1C000256DBE /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFF3AC21ECF1C000256DBE /* Collection+Safe.swift */; };
+		59FFF3AF21ECF28700256DBE /* ExpandedPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59FFF3AE21ECF28700256DBE /* ExpandedPostViewController.swift */; };
 		F2BA34380004FD1040AFB38B /* Pods_BentoExperiment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B32941A2CBC97962661BAE3 /* Pods_BentoExperiment.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,7 +29,7 @@
 		3B48381BFFAB1390944B31C2 /* Pods-BentoExperiment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoExperiment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment.debug.xcconfig"; sourceTree = "<group>"; };
 		59A9F26021E76A4C006320D6 /* BentoExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BentoExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59A9F26321E76A4C006320D6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		59A9F26521E76A4C006320D6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		59A9F26521E76A4C006320D6 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		59A9F26A21E76A4E006320D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59A9F26D21E76A4E006320D6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		59A9F26F21E76A4E006320D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +41,8 @@
 		59F79ABA21E8B0B700413405 /* RowId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowId.swift; sourceTree = "<group>"; };
 		59F79ABE21E8B47600413405 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		59FA1B7321E78A3200FE2CD4 /* EmptySpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptySpaceCell.swift; sourceTree = "<group>"; };
+		59FFF3AC21ECF1C000256DBE /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		59FFF3AE21ECF28700256DBE /* ExpandedPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandedPostViewController.swift; sourceTree = "<group>"; };
 		759379C57772CD830E0F8AEA /* Pods-BentoExperiment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BentoExperiment.release.xcconfig"; path = "Pods/Target Support Files/Pods-BentoExperiment/Pods-BentoExperiment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,16 +79,12 @@
 		59A9F26221E76A4C006320D6 /* BentoExperiment */ = {
 			isa = PBXGroup;
 			children = (
-				59A9F26321E76A4C006320D6 /* AppDelegate.swift */,
-				59A9F26521E76A4C006320D6 /* ViewController.swift */,
-				59B8395521E79F1300DE21D7 /* ViewModel.swift */,
-				59B8395A21E7A1AF00DE21D7 /* Store.swift */,
-				59A9F26A21E76A4E006320D6 /* Assets.xcassets */,
-				59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */,
-				59A9F26F21E76A4E006320D6 /* Info.plist */,
+				59FFF3B321ECF2D600256DBE /* Core */,
+				59FFF3B221ECF2CE00256DBE /* View Controllers */,
 				59F79AB721E8B09000413405 /* Models */,
 				59FA1B7221E7897200FE2CD4 /* Cells */,
 				59B8395221E79CCC00DE21D7 /* Resources */,
+				59FFF3AC21ECF1C000256DBE /* Collection+Safe.swift */,
 			);
 			path = BentoExperiment;
 			sourceTree = "<group>";
@@ -92,6 +92,8 @@
 		59B8395221E79CCC00DE21D7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				59A9F26A21E76A4E006320D6 /* Assets.xcassets */,
+				59A9F26C21E76A4E006320D6 /* LaunchScreen.storyboard */,
 				59B8395321E79D7500DE21D7 /* posts.json */,
 			);
 			path = Resources;
@@ -114,6 +116,42 @@
 				59F79ABE21E8B47600413405 /* PostCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		59FFF3B021ECF29400256DBE /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				59A9F26521E76A4C006320D6 /* PostsViewController.swift */,
+				59B8395521E79F1300DE21D7 /* ViewModel.swift */,
+				59B8395A21E7A1AF00DE21D7 /* Store.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		59FFF3B121ECF2BF00256DBE /* ExpandedPost */ = {
+			isa = PBXGroup;
+			children = (
+				59FFF3AE21ECF28700256DBE /* ExpandedPostViewController.swift */,
+			);
+			path = ExpandedPost;
+			sourceTree = "<group>";
+		};
+		59FFF3B221ECF2CE00256DBE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				59FFF3B021ECF29400256DBE /* Posts */,
+				59FFF3B121ECF2BF00256DBE /* ExpandedPost */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		59FFF3B321ECF2D600256DBE /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				59A9F26321E76A4C006320D6 /* AppDelegate.swift */,
+				59A9F26F21E76A4E006320D6 /* Info.plist */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 		62DCCF246581E017BB17F468 /* Pods */ = {
@@ -255,11 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59A9F26621E76A4C006320D6 /* ViewController.swift in Sources */,
+				59A9F26621E76A4C006320D6 /* PostsViewController.swift in Sources */,
 				59FA1B7421E78A3200FE2CD4 /* EmptySpaceCell.swift in Sources */,
 				59B8395621E79F1300DE21D7 /* ViewModel.swift in Sources */,
 				59F79ABB21E8B0B700413405 /* RowId.swift in Sources */,
+				59FFF3AD21ECF1C000256DBE /* Collection+Safe.swift in Sources */,
 				59B8395B21E7A1AF00DE21D7 /* Store.swift in Sources */,
+				59FFF3AF21ECF28700256DBE /* ExpandedPostViewController.swift in Sources */,
 				59F79ABF21E8B47600413405 /* PostCell.swift in Sources */,
 				59F79AB921E8B0A500413405 /* SectionId.swift in Sources */,
 				59A9F26421E76A4C006320D6 /* AppDelegate.swift in Sources */,
@@ -404,7 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6QXSY3FS;
-				INFOPLIST_FILE = BentoExperiment/Info.plist;
+				INFOPLIST_FILE = BentoExperiment/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +463,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UP6QXSY3FS;
-				INFOPLIST_FILE = BentoExperiment/Info.plist;
+				INFOPLIST_FILE = BentoExperiment/Core/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

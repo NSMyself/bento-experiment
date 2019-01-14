@@ -12,6 +12,8 @@ import Bento
 final class PostCell: UIView {
     
     private let labelPadding: CGFloat = 8
+    var id: Int = -1
+    var didTap: ((Int) -> Void)?
     
     let titleLabel: UILabel = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -34,6 +36,7 @@ final class PostCell: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLabels()
+        setupTapGesture()
     }
 
     private func setupLabels() {
@@ -50,23 +53,39 @@ final class PostCell: UIView {
             descriptionLabel.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
             descriptionLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -labelPadding)
         ])
+        
+        isUserInteractionEnabled = true
+    }
+    
+    private func setupTapGesture() {
+        let recognizer = UITapGestureRecognizer(target: self, action: #selector(tapped(gestureRecognizer:)))
+        addGestureRecognizer(recognizer)
+    }
+    
+    @objc private func tapped(gestureRecognizer: UITapGestureRecognizer) {
+        didTap?(id)
     }
 }
 
 final class PostComponent: Renderable {
-    
+    private let id: Int
     private let title: String
     private let description: String
+    private let didTap: ((Int) -> Void)?
     
     typealias View = PostCell
     
-    init(title: String, description: String) {
+    init(id: Int, title: String, description: String, didTap: ((Int) -> Void)? = nil) {
+        self.id = id
         self.title = title
         self.description = description
+        self.didTap = didTap
     }
     
     func render(in view: PostCell) {
+        view.id = id
         view.titleLabel.text = title
         view.descriptionLabel.text = description
+        view.didTap = didTap
     }
 }

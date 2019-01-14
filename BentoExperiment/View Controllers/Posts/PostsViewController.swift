@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PostsViewController.swift
 //  BentoExperiment
 //
 //  Created by João Pereira on 10/01/2019.
@@ -9,7 +9,7 @@
 import UIKit
 import Bento
 
-class ViewController: UIViewController {
+final class PostsViewController: UIViewController {
     let viewModel = ViewModel()
     let tableView: UITableView = {
         $0.translatesAutoresizingMaskIntoConstraints = false
@@ -23,13 +23,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        viewModel.parent = self
         viewModel.render()
     }
     
     private func setupViews() {
-        
         view.backgroundColor = .white
-        
         view.addSubview(tableView)
         
         NSLayoutConstraint.activate([
@@ -38,8 +37,13 @@ class ViewController: UIViewController {
             tableView.widthAnchor.constraint(equalTo: view.widthAnchor),
             tableView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
-        
-        viewModel.renderer.bind(tableView)
+    
+        viewModel.bind(tableView)
+    }
+    
+    func open(_ post: Post) {
+        let expandedVC = ExpandedPostViewController()
+        self.navigationController?.pushViewController(expandedVC, animated: true)
     }
 }
 
